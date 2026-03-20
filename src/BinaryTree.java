@@ -3,7 +3,7 @@ public class BinaryTree<E extends Comparable<E>> {
 
     private TreeNode<E> root;
 
-    // INSERT
+    
     public void insert(E value) {
         root = insertRec(root, value);
     }
@@ -22,7 +22,7 @@ public class BinaryTree<E extends Comparable<E>> {
         return node;
     }
 
-    // SEARCH
+    
     public E search(E value) {
         return searchRec(root, value);
     }
@@ -39,7 +39,6 @@ public class BinaryTree<E extends Comparable<E>> {
         return searchRec(node.right, value);
     }
 
-    // INORDER
     public void inOrder() {
         inOrderRec(root);
     }
